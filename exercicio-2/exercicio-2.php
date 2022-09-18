@@ -13,7 +13,7 @@ $array = [1,2,3,4,5,6,7];
 /**
  * 3) Imprima o número da posição 3 do array
  */
-echo "Terceira posição: $array[2]";
+echo "Posição 3: $array[3]";
 echo "</br>-------</br>";
 
 /**
@@ -27,7 +27,7 @@ $arrayToString = implode(",", $array);
  *  string que foi criada e destrua o array anterior
  */
 $stringToArray = explode(",", $arrayToString);
-unset($arrayToString);
+unset($array);
 
 /**
  * 6) Crie uma condição para verificar se existe o valor 14 no array
