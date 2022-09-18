@@ -35,11 +35,12 @@ Para executar o projeto siga o passo-a-passo
 ```bash
   git clone https://github.com/ulcas/dev-superlogica.git
 ```
-- 2 - Acesse o diretório do exercicio
+- 2 - Crie um banco de dados **MySQL**
+- 3 - Acesse o diretório do exercicio
 ```bash
   cd dev-superlogica/exercicio-3/
 ```
-- 3 - **DDL**
+- 4 - **DDL**
     - Execute as queries do script DDL.sql para criação das tabelas
     ```bash
         cd dev-superlogica/exercicio-3/
@@ -61,7 +62,7 @@ Para executar o projeto siga o passo-a-passo
             PRIMARY KEY (id)
         );
     ```
-- 4 - **DML**
+- 5 - **DML**
     - Execute as queries no script DML.sql para o insert dos dados e para exibir o resultado esperado.
     ```bash
         cd dev-superlogica/exercicio-3/
