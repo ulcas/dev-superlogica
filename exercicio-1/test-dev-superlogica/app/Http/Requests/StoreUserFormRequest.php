@@ -52,6 +52,7 @@ class StoreUserFormRequest extends FormRequest
                 'regex:/^[a-zA-Z0-9]*[a-zA-Z]+[a-zA-Z0-9]*$/',
                 'min:3',
                 'max:12',
+                'unique:users,user_name'
             ]
         ];
     }
@@ -80,6 +81,7 @@ class StoreUserFormRequest extends FormRequest
             'userName.regex' => 'Nome de Login: Não é permitido somente números e carateres especiais',
             'userName.min' => 'Nome de Login: Deve conter no minimo 3 caracteres',
             'userName.max' => 'Nome de Login: Deve conter no maximo 12 caracteres',
+            'userName.unique' => 'Nome de Login já utilizado',
         ];
     }
 }
