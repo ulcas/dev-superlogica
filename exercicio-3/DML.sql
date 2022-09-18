@@ -15,6 +15,14 @@ VALUES
   (83257946074, 'F', 1970), 
   (07583509025, 'M', 1972);
 
+DELETE FROM 
+  usuario 
+where 
+  cpf = '59875804045';
+DELETE FROM 
+  info 
+where 
+  cpf = '59875804045';
 
 SELECT 
   (
@@ -25,10 +33,12 @@ SELECT
       Year(
         Curdate()
       ) - i.ano_nascimento > 50
-    ) WHEN true THEN 'SIM' ELSE 'NAO' end
-  ) AS maior_50_anos 
+    ) WHEN true THEN 'SIM' ELSE 'NÃO' end
+  ) AS 'maior_50_anos' 
 FROM 
   usuario u 
   JOIN info i ON u.cpf = i.cpf 
 WHERE 
-  i.genero = 'M';
+  i.genero = 'M'
+ORDER BY
+  u.nome DESC;
