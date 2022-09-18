@@ -66,6 +66,42 @@ Para executar o projeto siga o passo-a-passo
       cd exercicio-1/test-dev-superlogica
       php artisan serve
     ```
+- 6 - Acessando o exercicio
+    - Acesse o exercicio no navegador através da URL disponibilizada pelo servidor do Laravel.
+
+## Rotas disponíveis
+
+#### Lista os usuários
+
+```http
+  GET /users/index
+```
+
+#### Registra um usuário
+
+```http
+  GET /users/registration/
+```
+
+#### Edita um usuario
+
+```http
+  GET /users/edit/{id}
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` | **Obrigatório**. O ID do usuário |
+
+#### Deleta um usuario
+
+```http
+  GET /users/delete/{id}
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` | **Obrigatório**. O ID do usuário |
 
 
 ## FAQ
