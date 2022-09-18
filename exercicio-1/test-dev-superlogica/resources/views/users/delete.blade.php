@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="antialiased">
-<form action="{{ route('delete_user', ['id' => $user->id]) }}" method="post">
+<form action="{{ route('destroy_user', ['id' => $user->id]) }}" method="post">
     @method("DELETE")
     @csrf
     <div>

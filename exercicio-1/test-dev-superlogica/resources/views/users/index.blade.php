@@ -29,7 +29,7 @@
 </head>
 <body class="antialiased">
     <h1>Listagem de usuário</h1>
-    <a href="{{ route('user_register') }}"><h3>Registrar novo usuário</h3></a>
+    <a href="{{ route('registration_user') }}"><h3>Registrar novo usuário</h3></a>
     <table class="table table-striped">
         <tr>
             <th>Nome do usuário</th>
@@ -46,7 +46,7 @@
                 <td>{{ $user->email }}</td>
                 <td><a href="{{ route('show_user', $user->id) }}">Visualizar</a></td>
                 <td><a href="{{ route('edit_user', $user->id) }}">Editar</a></td>
-                <td><a href="{{ route('user_delete', $user->id) }}">Deletar</a></td>
+                <td><a href="{{ route('delete_user', $user->id) }}">Deletar</a></td>
             </tr>
         @endforeach
     </table>
