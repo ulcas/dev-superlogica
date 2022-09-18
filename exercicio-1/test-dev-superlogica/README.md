@@ -91,7 +91,7 @@ Para executar o projeto siga o passo-a-passo
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID do usuário |
+| `id`      | `int` | **Obrigatório**. O ID do usuário |
 
 #### Deleta um usuario
 
@@ -101,7 +101,7 @@ Para executar o projeto siga o passo-a-passo
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID do usuário |
+| `id`      | `int` | **Obrigatório**. O ID do usuário |
 
 
 ## FAQ
